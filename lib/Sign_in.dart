@@ -118,17 +118,9 @@ class _SignInState extends State<SignIn> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Center(
-                              child:
-                                  ImageIcon(AssetImage('assets/facebook.png')),
-                            ),
+                          
                             SizedBox(width: 10.0),
-                            Center(
-                              child: Text('Log in with facebook',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'Montserrat')),
-                            )
+                           
                           ],
                         ),
                       ),

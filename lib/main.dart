@@ -18,12 +18,12 @@ class MyApp extends StatelessWidget {
           primaryColor: defaultTargetPlatform == TargetPlatform.iOS
               ? Colors.grey[50]
               : null),
-      home: SignIn(),
+      initialRoute: '/',
       routes: {
     // When navigating to the "/" route, build the FirstScreen widget.
     '/signup': (context) => SignupPage(),
     // When navigating to the "/second" route, build the SecondScreen widget.
-    '/signin': (context) => SignIn(),
+    '/': (context) => SignIn(),
   },
     );
   }
