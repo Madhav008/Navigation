@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import 'fancy_action.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -10,8 +11,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.lime,
-      primaryColor: defaultTargetPlatform == TargetPlatform.iOS ? Colors.grey[50]: null),
+      theme: ThemeData(
+          primarySwatch: Colors.lime,
+          primaryColor: defaultTargetPlatform == TargetPlatform.iOS
+              ? Colors.grey[50]
+              : null),
       home: HomePage(),
     );
   }
@@ -36,29 +40,45 @@ class HomePage extends StatelessWidget {
                 child: Text('MJ'),
               ),
               otherAccountsPictures: <Widget>[
-                CircleAvatar(backgroundColor: Colors.white,)
+                CircleAvatar(
+                  backgroundColor: Colors.white,
+                )
               ],
             ),
             ListTile(
               title: Text("Page One"),
               trailing: Icon(Icons.arrow_upward),
             ),
+            Divider(
+              color: Colors.blueGrey,
+            ),
             ListTile(
               title: Text("Page Two"),
               trailing: Icon(Icons.arrow_upward),
             ),
+            Divider(
+              color: Colors.blueGrey,
+            ),
             ListTile(
-              title: Text("Page Two"),
+              title: Text("Sign Up"),
+              onTap: () => Navigator.of(context).pop(),
               trailing: Icon(Icons.arrow_downward),
             ),
-            Divider(color: Colors.blueGrey,),
+            Divider(
+              color: Colors.blueGrey,
+            ),
             ListTile(
-              title: Text("Close"),
-              trailing: Icon(Icons.close),
-              onTap: ()=> Navigator.of(context).pop()
+                title: Text("Close"),
+                trailing: Icon(Icons.close),
+                onTap: () => Navigator.of(context).pop()),
+            Divider(
+              color: Colors.blueGrey,
             ),
           ],
         ),
+      ),
+      floatingActionButton: FancyAction(
+        onPressed: null,
       ),
       body: Container(
         child: Center(
