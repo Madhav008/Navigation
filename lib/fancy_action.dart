@@ -16,7 +16,9 @@ final GestureTapCallback onPressed;
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
+          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
+           
             Icon(Icons.star,),
             Text("Add Item",
             style: TextStyle(color: Colors.white),),
