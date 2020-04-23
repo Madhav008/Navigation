@@ -60,15 +60,16 @@ class HomePage extends StatelessWidget {
               color: Colors.blueGrey,
             ),
             ListTile(
-              title: Text("Page Two"),
+              title: Text("Sign In"),
               trailing: Icon(Icons.arrow_upward),
+              onTap: () => Navigator.of(context).pushNamed('/signin'),
             ),
             Divider(
               color: Colors.blueGrey,
             ),
             ListTile(
               title: Text("Sign Up"),
-              onTap: () => Navigator.of(context).pop(),
+              onTap: () => Navigator.of(context).pushNamed('/signup'),
               trailing: Icon(Icons.arrow_downward),
             ),
             Divider(
