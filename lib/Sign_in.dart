@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'Sign_up.dart';
+
 class SignIn extends StatefulWidget {
   @override
   _SignInState createState() => new _SignInState();
@@ -103,28 +103,6 @@ class _SignInState extends State<SignIn> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20.0),
-                    Container(
-                      height: 40.0,
-                      color: Colors.transparent,
-                      child: Container(
-                        decoration: BoxDecoration(
-                            border: Border.all(
-                                color: Colors.black,
-                                style: BorderStyle.solid,
-                                width: 1.0),
-                            color: Colors.transparent,
-                            borderRadius: BorderRadius.circular(20.0)),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                          
-                            SizedBox(width: 10.0),
-                           
-                          ],
-                        ),
-                      ),
-                    )
                   ],
                 )),
             SizedBox(height: 15.0),

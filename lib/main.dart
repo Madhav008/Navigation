@@ -20,11 +20,10 @@ class MyApp extends StatelessWidget {
               : null),
       initialRoute: '/',
       routes: {
-    // When navigating to the "/" route, build the FirstScreen widget.
-    '/signup': (context) => SignupPage(),
-    // When navigating to the "/second" route, build the SecondScreen widget.
-    '/': (context) => SignIn(),
-  },
+        '/': (context) => HomePage(),
+        '/signup': (context) => SignupPage(),
+        '/signin': (context) => SignIn(),
+      },
     );
   }
 }
