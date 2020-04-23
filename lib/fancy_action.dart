@@ -15,8 +15,13 @@ final GestureTapCallback onPressed;
       splashColor: Colors.red,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Text("Add Item",
-        style: TextStyle(color: Colors.white),),
+        child: Row(
+          children: <Widget>[
+            Icon(Icons.star,),
+            Text("Add Item",
+            style: TextStyle(color: Colors.white),),
+          ],
+        ),
       ),
       shape: const StadiumBorder(),
       onPressed: onPressed,
