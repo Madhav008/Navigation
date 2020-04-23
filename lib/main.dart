@@ -1,4 +1,6 @@
 import 'package:flutter/foundation.dart';
+import 'package:navigation_drawer/Sign_up.dart';
+import 'Sign_in.dart';
 import 'fancy_action.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +18,13 @@ class MyApp extends StatelessWidget {
           primaryColor: defaultTargetPlatform == TargetPlatform.iOS
               ? Colors.grey[50]
               : null),
-      home: HomePage(),
+      home: SignIn(),
+      routes: {
+    // When navigating to the "/" route, build the FirstScreen widget.
+    '/signup': (context) => SignupPage(),
+    // When navigating to the "/second" route, build the SecondScreen widget.
+    '/signin': (context) => SignIn(),
+  },
     );
   }
 }
