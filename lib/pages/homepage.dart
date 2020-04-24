@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'fancy_action.dart';
+import 'package:navigation_drawer/widgets/fancy_action.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
             ListTile(
               title: Text("Sign In"),
               trailing: Icon(Icons.arrow_upward),
-              onTap: () => Navigator.of(context).pushNamed('/signin'),
+              onTap: () => Navigator.of(context).pushNamed('/'),
             ),
             Divider(
               color: Colors.blueGrey,
