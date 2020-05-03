@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:navigation_drawer/pages/homepage.dart';
+import 'package:navigation_drawer/pages/welcome.dart';
 import 'package:navigation_drawer/services/auth.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -30,7 +30,7 @@ class _SignUpPageState extends State<SignUpPage> {
           Navigator.pushReplacement(
               context,
               MaterialPageRoute(
-                builder: (context) => HomePage(),
+                builder: (context) => WelcomePage(),
               ));
         }
       });

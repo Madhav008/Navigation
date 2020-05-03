@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:navigation_drawer/pages/Sign_in.dart';
 import 'package:navigation_drawer/pages/Sign_up.dart';
+import 'package:navigation_drawer/pages/welcome.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,10 +18,11 @@ class MyApp extends StatelessWidget {
           primaryColor: defaultTargetPlatform == TargetPlatform.iOS
               ? Colors.grey[50]
               : null),
-      initialRoute: '/',
+      home: WelcomePage(),
       routes: {
-        '/': (context) => SignIn(),
+        '/signin': (context) => SignIn(),
         '/signup': (context) => SignUpPage(),
+        '/welcome': (context) => WelcomePage(),
       },
     );
   }
